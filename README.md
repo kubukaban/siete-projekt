@@ -5,3 +5,4 @@ Program graph.ipynb načíta súbor linky.txt a vytvorý graf sieti mhd.  Tento 
 krelsenie grafu.py je program čo vygeneruje náhodný graf a nakrelí ho, vrcholy sú zafarbené podľa spojenosti( alebo centrality už si nie som istý). graf sa otvarí v prehliadači.
 
 link na report https://docs.google.com/document/d/1pHp0rORXtKSpdfbTBlz6ld8ac9qV1hk0nLgn_M13WB4/edit?usp=sharing
+link na colab s grafom https://colab.research.google.com/drive/1KxDKzoMGsNsfTO51mOG_hhd-zSiI1w_1?usp=sharing
