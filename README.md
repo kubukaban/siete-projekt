@@ -16,6 +16,9 @@ Dáta o prepojenosti zastávok, aktuálne ku 14.4.2024, sme získali [scrapovan�
 
 Scrapovali sme pomocou pythonovského programu a dáta sme uložili do súboru [linky.txt](linky.txt). Každý riadok súbor sa začína číslom linky, za ktorým nasleduje postupnosť zastávok, cez ktoré daná linka ide. Keďže niektoré linky majú rozdielne zastávky v opačnom smere, je potrebné uložiť si postupnosť zastávok v oboch smeroch.
 
+Súbor so zastávkami obsahuje riadky vo formáte 
+```číslo linky: zástavka1;zástavka2;zástavka3;....................;zastávkan```
+
 ## Základné informácie a štatistická charakterizácia siete
 
 Sieť, ktorú sme vytvorili získaním dát má 564 vrcholov a 1416 hrán. Priemerný stupeň vrchola je 5.02, čiže v priemere sa vieme z každej zastávky dostať na 5 rôznych susediacich zastávok. 
@@ -88,8 +91,12 @@ Netreba však zanedbať ani ostatné zastávky, ktoré sú uzlami. Často je to 
 
 ## Najmenší počet prestupov
 
-Dôležitým a praktickým faktorom cestovania pre nás, autorov, je dostať sa z jedného miesta na druhé čo najjednoduchšie. 
+Dôležitým a praktickým faktorom cestovania pre nás, autorov, je dostať sa z jedného miesta na druhé čo najjednoduchšie - s minimálnym množstvom prestupov. A myslíme si, že to zaujíma aj iných cestujúcich. Preto sme sa rozhodli zistiť, aký je priemerný, najmenší a najväčší počet prestupov, keď sa chceme dostať vrámci Bratislavy z bodu A do bodu B. 
 
+Na vypočítanie minimálneho počtu prestupov sme zostrojili bipartitný graf. Na jednej strane sú ako vrcholy grafu čísla liniek a na druhej strane sú vrcholmi jednotlivé zastávky. Ak linka číslo 1 prechádzala cez zastávku A, tak 1 a A sú spojené hranou. Následne sme problém transformovali na hľadanie najkratšej cesty v grafe. Spravili sme program, ktorý nám vypísal postupnosť vrcholov, cez ktoré prechádzame a z tých sme počítali koľko krát sme prešli cez vrchol s číslom linky. Od tohto čísla odpočítame jedna a to určuje počet prestupov. 
+Vytvorili sme teda maticu, kde sme si uložili minimálne počty prestupov pre každú dvojicu zastávok. Táto matica má na diagonále 0, nakoľko zo zastávky A do zastávky A nepotrebujeme žiaden prestup. 
+
+Na tomto histograme môžeme vidieť, že ak chceme cestovať vrámci Bratislavy na nejakú zo zastávok v našej sieti, potrebujeme na to maximálne 4 prestupy. 
 <p align="center">
 <img src="transfers.png" width="600">
 </p>
