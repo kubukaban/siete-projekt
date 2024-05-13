@@ -43,11 +43,9 @@ Na tomto obrázku môžeme vidieť skúmanú sieť. Pre veľkosť siete by bolo 
 ## Rozdelenie stupňov vrcholov (Degree Distribution)
 
 ### Histogram 1
-<p align="center">
-<img src="multigraph_distri.png" width="600">
-</p>
 
-### Histogram 2
+Na tomto obrázku vidíme rozdelenie stupňa vrcholov.
+
 <p align="center">
 <img src="graph_distri.png" width="600">
 </p>
