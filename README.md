@@ -40,15 +40,26 @@ Na tomto obrázku môžeme vidieť skúmanú sieť. Pre veľkosť siete by bolo 
 ## Rozdelenie stupňov vrcholov (Degree Distribution)
 
 ### Histogram 1
+<p align="center">
+<img src="multigraph_distri.png" width="600">
+</p>
 
 ### Histogram 2
+<p align="center">
+<img src="graph_distri.png" width="600">
+</p>
 
 ## Najdôležitejšie zastávky v MHD
 Ako sme už povedali vyššie, MHD predstavuje kľúčový prvok verejnej dopravy v mnohých moderných mestách a Bratislava nie je výnimkou. 
 Na obrázku môžeme vidieť graf reprezentujúci linky MHD v Bratislave. Veľkosť vrchola reprezentuje centralitu stupňa vrchola a farba reprezentuje centralitu blízkosti. Farebná škála ide od modrej, ktorá reprezentuje najmenšiu centralitu až po červenú, ktorá reprezentuje najväčšiu centralitu.
 
+<p align="center">
+<img src="closenes.png" width="600">
+</p>
+
 ### Centralita stupňa vrchola (Degree Centrality)
 Body s vysokou centralitou stupňa vrchola, v našom prípade zastávky, sú miesta, z ktorých sa vieme dostať na rôzne smery. Zrejme to môžu byť miesta v blízkosti nákupných centier, kancelárskych budov, alebo pri veľkých križovatkách, ktoré slúžia ako prestupný bod na viaceré miesta. Keď sa pozrieme na mapu, táto myšlienka sa potvrdzuje napríklad pri Trnavskom mýte. Konkrétne Trnavské mýto je všeobecne známe tým, že z neho premávajú autobusy, trolejbusy a električky. Taktiež si môžeme všimnúť aj rozpoloženie týchto zastávok. Predpokladali sme, že niektoré zastávky budú sústredné na jednom mieste, konkrétne, v okoli centra Bratislavy. Naopak, väčšina týchto zastávok je rozprestretá po celej Bratislave. Môžeme teda povedať, že zastávky, ktoré majú vysokú centralitu stupňa vrchola slúžia ako dôležité prestupné body, na ktorých vieme prestúpiť na množstvo iných liniek, z ktorých sa vieme dostať na iné dôležité miesta ako je letisko, železničná stanica a podobne. 
+
 
 ### Centralita blízkosti (Closeness Centrality)
 
