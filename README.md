@@ -44,10 +44,10 @@ Na tomto obrázku môžeme vidieť skúmanú sieť. Pre veľkosť siete by bolo 
 
 ### Histogram 1
 
-Na tomto obrázku vidíme rozdelenie stupňa vrcholov.
+Na tomto obrázku vidíme rozdelenie stupňa vrcholov. Môžeme si všimnúť, že najviac zastávok má práve 2 susediace zastávky, ale existuje aj zastávka s 11 susediacimi zastávkami. Ide o zastávku *Patrónka* a susedia s ňou tieto zastávky: ```['Pod stanicou', 'Mokrohájska', 'Vrančovičova', 'Habánsky mlyn', 'Suchý mlyn', 'Červený most', 'Hýrošova', 'Stn. Lamač', 'Hroboňova', 'Dubová', 'Valašská']```. 
 
 <p align="center">
-<img src="graph_distri.png" width="600">
+<img src="degree_distribution.png" width="600">
 </p>
 
 ## Najdôležitejšie zastávky v MHD
