@@ -86,6 +86,8 @@ V rámci analýzy siete MHD sme identifikovali oblasti, kde by potenciálne mohl
 Netreba však zanedbať ani ostatné zastávky, ktoré sú uzlami. Často je to však z toho dôvodu, že priamo z Bratislavy vedie do okrajových častí len jedna cesta a teda často buď jeden spoj, alebo niekoľko spojov, pričom každý končí na nejakej inej zastávke. Dalo by sa teda konštatovať, že slabinou MHD siete je, že pokiaľ by sa mala rekonštruovať cesta napríklad smerom do Rusoviec, znamenalo by to vytvorenie kompletnej obchádzkovej trasy cez úplne iné ulice. 
 
 ## Perkolácia v sieti
+
+Rozhodli sme sa experimentovať aj s odstraňovaním náhodných vrcholov a sledovať jej prepojenosť. Pri odstránení 20% náhodných vrcholov prepojenosť siete začína zásadne klesať. V realite by to mohlo znamenať, že ak by sa z nejakého vážneho dôvodu obmedzila premávka v Bratislave, vážne by to ovplyvnilo aj MHD. 
 <p align="center">
 <img src="graf_perkolacie.png" width="600">
 </p>
