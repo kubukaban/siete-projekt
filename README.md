@@ -1,3 +1,16 @@
+# Bratislavská MHD
+
+## Úvod
+Mestská hromadná doprava predstavuje kľúčový prvok verejnej dopravy v mnohých moderných mestách po celom svete. V tomto projekte sa budeme zaoberať rôznymi aspektmi siete tvorenou vybranými zastávkami MHD v meste Bratislava a linkami, ktoré medzi týmito zastávkami premávajú. Cieľom je sa pozrieť na základné štatistické miery siete, výpočet centralit, vyhodnocovanie hustoty siete a podobne. Tieto informácie nám pomôžu odpovedať na niekoľko otázok, ktoré sme si položili. Na to využijeme programovací jazyk Python a knižnicu NetworkX, ktorá umožňujú efektívnu manipuláciu so sieťami a ich analýzu. 
+
+Tu uvádzame niekoľko otázok, na ktoré sa budeme snažiť odpovedať v našom projekte:
+
+1. Ktoré zastávky sú najdôležitejšie v sieti MHD a dôvody prečo sú dôležité? (podľa počtu liniek, ktoré cez ne prechádzajú; či spájajú mestské časti, alebo väčšina z nich je sústredená v jednej časti) 
+2. Čo sú slabiny (mosty, artikulácie) v sieti MHD?
+3. Aká je priemerná vzdialenosť 2 zastávok (počet zastávok medzi nimi)
+4. Ako sa vieme dostať z jednej zastávky do druhej pomocou minimálneho počtu prestupov? 
+
+
 Vytvorenie siete Bratislavskej mhd.
 Program crawl.py získal linky a zastávky z https://imhd.sk/ba/cestovne-poriadky a uložil ich do súboru linky.txt
 linky.txt Je vo formáte číslo linky: zástavka1;zástavka2;zástavka3;....................;zastávkan
@@ -6,3 +19,4 @@ krelsenie grafu.py je program čo vygeneruje náhodný graf a nakrelí ho, vrcho
 
 link na report https://docs.google.com/document/d/1pHp0rORXtKSpdfbTBlz6ld8ac9qV1hk0nLgn_M13WB4/edit?usp=sharing
 link na colab s grafom https://colab.research.google.com/drive/1KxDKzoMGsNsfTO51mOG_hhd-zSiI1w_1?usp=sharing
+
