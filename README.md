@@ -14,7 +14,23 @@ Tu uvádzame niekoľko otázok, na ktoré sa budeme snažiť odpovedať v našom
 
 Dáta o prepojenosti zastávok, aktuálne ku 14.4.2024, sme získali scrapovaním zo stránky https://imhd.sk/ba/. Stránka obsahuje linky Bratislavskej MHD spolu so zastávkami v oboch smeroch pre danú linku. Pre jednoduchosť sme použili len linky, ktoré mali číslo menšie ako 200. Linky s číslom nad 200 už zahŕňajú regionálne linky, ktoré obsluhujú obce mimo Bratislavy. Taksito sme nepoužili nočné linky a vlakové spojenia.
 
-Scrapovali sme pomocou pythonovského programu a dáta sme uložili do súboru *linky.txt*. Každý riadok súbor sa začína číslom linky, za ktorým nasleduje postupnosť zastávok, cez ktoré daná linka ide. Keďže niektoré linky majú rozdielne zastávky v opačnom smere, je potrebné uložiť si postupnosť zastávok v oboch smeroch.
+Scrapovali sme pomocou pythonovského programu a dáta sme uložili do súboru [linky.txt](linky.txt). Každý riadok súbor sa začína číslom linky, za ktorým nasleduje postupnosť zastávok, cez ktoré daná linka ide. Keďže niektoré linky majú rozdielne zastávky v opačnom smere, je potrebné uložiť si postupnosť zastávok v oboch smeroch.
+
+## Základné informácie a štatistická charakterizácia siete
+
+Sieť, ktorú sme vytvorili získaním dát má 564 vrcholov a 1416 hrán. Priemerný stupeň vrchola je 5.02, čiže v priemere sa vieme z každej zastávky dostať na 5 rôznych susediacich zastávok. 
+
+Tieto a ďalšie základné charakteristiky siete, s ktorou pracujeme, uvádzame v nasledujúcej tabuľke.
+| Vlastnosť siete  | Hodnota |
+| ------------- | ------------- |
+| Počet vrcholov | 564  |
+| Počet hrán | 1416 |
+| Priemerný stupeň vrchola | 5.02  |
+| Hustota | 0.0045  |
+| Zhlukový koeficient | 0.098 |
+| Počet silne súvislých komponentov | 1  |
+
+Ako môžeme vidieť, celá sieť tvorená zastávkami MHD vytvára jeden silne súvislý komponent súvislosti. Nízka hustota ukazuje, že MHD sieť je riedka a zároveň relatívne nízky zhlukový koeficient zrejme hovorí o tom, že cestujúci nemusia mať priamy spoj medzi niektorými zastávkami a musia preto prestupovať medzi viacerými linkami, aby sa dostali do cieľovej zastávky. 
 
 
 
