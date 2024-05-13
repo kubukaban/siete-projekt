@@ -84,6 +84,12 @@ V rámci analýzy siete MHD sme identifikovali oblasti, kde by potenciálne mohl
 <img src="slabiny.png" width="600">
 </p>
 
+
+## Perkolácia v sieti
+<p align="center">
+<img src="graf_perkolacie.png" width="600">
+</p>
+
 * **Stn. Vinohrady**: v prípade rekonštrukcie cesty v okolí tejto zastávky by sa museli zaviesť náhradné zastávky niekde pri Stn. Vinohrady, aby sa dalo dostať na smer Horáreň Krásňany
 * **Trnavské mýto**: táto zastávka nás celkom prekvapila. Dôvod toho, že je artikuláciou je ten, že z neho vedie cesta na zastávku Jelačičova, na ktorú sa ide len cez Trnavské mýto. 
 
