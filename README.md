@@ -90,6 +90,10 @@ Netreba však zanedbať ani ostatné zastávky, ktoré sú uzlami. Často je to 
 
 Dôležitým a praktickým faktorom cestovania pre nás, autorov, je dostať sa z jedného miesta na druhé čo najjednoduchšie. 
 
+<p align="center">
+<img src="transfers.png" width="600">
+</p>
+
 Vytvorenie siete Bratislavskej mhd.
 Program crawl.py získal linky a zastávky z https://imhd.sk/ba/cestovne-poriadky a uložil ich do súboru linky.txt
 linky.txt Je vo formáte číslo linky: zástavka1;zástavka2;zástavka3;....................;zastávkan
