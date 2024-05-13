@@ -84,16 +84,16 @@ V rámci analýzy siete MHD sme identifikovali oblasti, kde by potenciálne mohl
 <img src="slabiny.png" width="600">
 </p>
 
+* **Stn. Vinohrady**: v prípade rekonštrukcie cesty v okolí tejto zastávky by sa museli zaviesť náhradné zastávky niekde pri Stn. Vinohrady, aby sa dalo dostať na smer Horáreň Krásňany
+* **Trnavské mýto**: táto zastávka nás celkom prekvapila. Dôvod toho, že je artikuláciou je ten, že z neho vedie cesta na zastávku Jelačičova, na ktorú sa ide len cez Trnavské mýto. 
+
+Netreba však zanedbať ani ostatné zastávky, ktoré sú uzlami. Často je to však z toho dôvodu, že priamo z Bratislavy vedie do okrajových častí len jedna cesta a teda často buď jeden spoj, alebo niekoľko spojov, pričom každý končí na nejakej inej zastávke. Dalo by sa teda konštatovať, že slabinou MHD siete je, že pokiaľ by sa mala rekonštruovať cesta napríklad smerom do Rusoviec, znamenalo by to vytvorenie kompletnej obchádzkovej trasy cez úplne iné ulice. 
 
 ## Perkolácia v sieti
 <p align="center">
 <img src="graf_perkolacie.png" width="600">
 </p>
 
-* **Stn. Vinohrady**: v prípade rekonštrukcie cesty v okolí tejto zastávky by sa museli zaviesť náhradné zastávky niekde pri Stn. Vinohrady, aby sa dalo dostať na smer Horáreň Krásňany
-* **Trnavské mýto**: táto zastávka nás celkom prekvapila. Dôvod toho, že je artikuláciou je ten, že z neho vedie cesta na zastávku Jelačičova, na ktorú sa ide len cez Trnavské mýto. 
-
-Netreba však zanedbať ani ostatné zastávky, ktoré sú uzlami. Často je to však z toho dôvodu, že priamo z Bratislavy vedie do okrajových častí len jedna cesta a teda často buď jeden spoj, alebo niekoľko spojov, pričom každý končí na nejakej inej zastávke. Dalo by sa teda konštatovať, že slabinou MHD siete je, že pokiaľ by sa mala rekonštruovať cesta napríklad smerom do Rusoviec, znamenalo by to vytvorenie kompletnej obchádzkovej trasy cez úplne iné ulice. 
 
 ## Najmenší počet prestupov
 
