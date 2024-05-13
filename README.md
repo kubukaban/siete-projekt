@@ -73,8 +73,6 @@ Vrcholy - zastávky s vysokou centralitou blízkosti by mohli predstavovať tie 
 <img src="closeness_central.png" width="600">
 </p>
 
-### Centralita prepojenosti? (Betweenness Centrality)
-
 ## Slabiny v sieti MHD
 V rámci analýzy siete MHD sme identifikovali oblasti, kde by potenciálne mohlo dochádzať k problémom v prípade, že sa poškodí cesta, zastávka a podobne. Na niektorých úsekoch nie je vôbec možné dopravu presmerovať cez existujúce zastávky. Takéto zastávky sme identifikovali a je ich pomerne dosť. Znázorňujeme ich aj na nasledujúcom grafe. Zo zastávok, ktoré sú v našej sieti artikuláciami, vyberáme dve, ktoré z predchádzajúcej analýzy považujeme za veľmi dôležité:
 
