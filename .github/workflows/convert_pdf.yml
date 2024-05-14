@@ -1,0 +1,27 @@
+name: Convert README to PDF
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Pandoc
+      run: sudo apt-get install -y pandoc texlive
+
+    - name: Convert README.md to README.pdf
+      run: pandoc README.md -o README.pdf
+
+    - name: Upload README.pdf
+      uses: actions/upload-artifact@v2
+      with:
+        name: README-pdf
+        path: README.pdf
