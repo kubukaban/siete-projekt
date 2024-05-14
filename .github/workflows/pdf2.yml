@@ -1,0 +1,32 @@
+name: Convert README to PDF
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y pandoc wkhtmltopdf
+
+    - name: Convert README.md to README.html
+      run: pandoc README.md -o README.html --from markdown --to html
+
+    - name: Convert README.html to README.pdf
+      run: wkhtmltopdf README.html README.pdf
+
+    - name: Upload README.pdf
+      uses: actions/upload-artifact@v2
+      with:
+        name: README-pdf
+        path: README.pdf
