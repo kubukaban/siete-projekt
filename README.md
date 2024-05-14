@@ -1,5 +1,7 @@
 # Bratislavská MHD
 
+**Autori projektu:** Barbora Bezáková, Kristián Nosko, Jakub Caban
+
 ## Úvod
 Mestská hromadná doprava predstavuje kľúčový prvok verejnej dopravy v mnohých moderných mestách po celom svete. V tomto projekte sa budeme zaoberať rôznymi aspektmi siete tvorenou vybranými zastávkami MHD v meste Bratislava a linkami, ktoré medzi týmito zastávkami premávajú. Cieľom je sa pozrieť na základné štatistické miery siete, výpočet centralit, vyhodnocovanie hustoty siete a podobne. Tieto informácie nám pomôžu odpovedať na niekoľko otázok, ktoré sme si položili. Na to využijeme programovací jazyk Python a knižnicu NetworkX, ktorá umožňujú efektívnu manipuláciu so sieťami a ich analýzu. 
 
@@ -125,3 +127,19 @@ Analýza minimálneho počtu prestupov pre cestovanie medzi zastávkami odhalila
 
 Na záver, náš projekt nám priniesol hodnotné poznatky, ktoré by po detailnejšej analýze mohli byť využité pre zlepšenie a optimalizáciu MHD v Bratislave. 
 
+### *Podiel práce na projekte:*
+
+Jakub Caban: $\\frac{1}{3}\$
+* scrapovanie zo stránky imhd
+* načítanie grafu z *txt* súboru, vytvorenie grafu v networkx
+* výpočet centralít, najkratšie cesty v grafe
+  
+Barbora Bezáková: $\\frac{1}{3}\$
+* interpretácia výsledkov výpočtu centralít
+* rozdelenie stupňov vrcholov
+* slabiny v sieti, najkratšie cesty
+
+Kristián Nosko: $\\frac{1}{3}\$
+* položenie výskumných otázok, debugging kódu
+* niektoré základné charakteristiky siete + perkolácia, vytvorenie máp pre dôležité zastávky v našej sieti
+* preštylizovanie reportu, tvorba prezentácie
