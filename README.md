@@ -21,6 +21,8 @@ Scrapovali sme pomocou pythonovského programu a dáta sme uložili do súboru [
 Súbor so zastávkami obsahuje riadky vo formáte 
 ```číslo linky: zástavka1;zástavka2;zástavka3;....................;zastávkan```
 
+Relevantný kód k celému projektu je [tu](code/cely_kod.py). 
+
 ## Základné informácie a štatistická charakterizácia siete
 
 Sieť, ktorú sme vytvorili získaním dát má 564 vrcholov a 1416 hrán. Priemerný stupeň vrchola je 5.02, čiže v priemere sa vieme z každej zastávky dostať na 5 rôznych susediacich zastávok. 
