@@ -39,7 +39,7 @@ Ako môžeme vidieť, celá sieť tvorená zastávkami MHD vytvára jeden silne 
 
 Na tomto obrázku môžeme vidieť skúmanú sieť. Pre veľkosť siete by bolo veľmi neprehľadné uvádzať názvy jednotlivých zastávok do tejto vizualizácie, preto sa na niektoré špecifické zastávky pozrieme neskôr.
 <p align="center">
-<img src="cely_graf.png" width="600">
+<img src="images/cely_graf.png" width="600">
 </p>
 
 ## Rozdelenie stupňov vrcholov (Degree Distribution)
@@ -49,7 +49,7 @@ Na tomto obrázku môžeme vidieť skúmanú sieť. Pre veľkosť siete by bolo 
 Na tomto obrázku vidíme rozdelenie stupňa vrcholov. Môžeme si všimnúť, že najviac zastávok má práve 2 susediace zastávky, ale existuje aj zastávka s 11 susediacimi zastávkami. Ide o zastávku *Patrónka* a susedia s ňou tieto zastávky: ```['Pod stanicou', 'Mokrohájska', 'Vrančovičova', 'Habánsky mlyn', 'Suchý mlyn', 'Červený most', 'Hýrošova', 'Stn. Lamač', 'Hroboňova', 'Dubová', 'Valašská']```. 
 
 <p align="center">
-<img src="degree_distribution.png" width="600">
+<img src="images/degree_distribution.png" width="600">
 </p>
 
 ## Najdôležitejšie zastávky v MHD
@@ -57,14 +57,14 @@ Ako sme už povedali vyššie, MHD predstavuje kľúčový prvok verejnej doprav
 Na obrázku môžeme vidieť graf reprezentujúci linky MHD v Bratislave. Veľkosť vrchola reprezentuje centralitu stupňa vrchola a farba reprezentuje centralitu blízkosti. Farebná škála ide od modrej, ktorá reprezentuje najmenšiu centralitu až po červenú, ktorá reprezentuje najväčšiu centralitu. Na jednotlivé zastávky, ktoré majú vysokú centralitu stupňa vrchola alebo centralitu blízkosti sa pozrieme detailnejšie.
 
 <p align="center">
-<img src="closenes.png" width="600">
+<img src="images/closenes.png" width="600">
 </p>
 
 ### Centralita stupňa vrchola (Degree Centrality)
 Body s vysokou centralitou stupňa vrchola, v našom prípade zastávky, sú miesta, z ktorých sa vieme dostať na rôzne smery. Zrejme to môžu byť miesta v blízkosti nákupných centier, kancelárskych budov, alebo pri veľkých križovatkách, ktoré slúžia ako prestupný bod na viaceré miesta. Keď sa pozrieme na mapu, táto myšlienka sa potvrdzuje napríklad pri Trnavskom mýte. Konkrétne *Trnavské mýto* je všeobecne známe tým, že z neho premávajú autobusy, trolejbusy a električky. Taktiež si môžeme všimnúť aj rozpoloženie týchto zastávok. Predpokladali sme, že niektoré zastávky budú sústredné na jednom mieste, konkrétne, v okoli centra Bratislavy. Naopak, väčšina týchto zastávok je rozprestretá po celej Bratislave. Môžeme teda povedať, že zastávky, ktoré majú vysokú centralitu stupňa vrchola slúžia ako dôležité prestupné body, na ktorých vieme prestúpiť na množstvo iných liniek, z ktorých sa vieme dostať na iné dôležité miesta ako je letisko, železničná stanica a podobne. 
 
 <p align="center">
-<img src="degree_central.png" width="600">
+<img src="images/degree_central.png" width="600">
 </p>
 
 ### Centralita blízkosti (Closeness Centrality)
@@ -72,14 +72,14 @@ Body s vysokou centralitou stupňa vrchola, v našom prípade zastávky, sú mie
 Vrcholy - zastávky s vysokou centralitou blízkosti by mohli predstavovať tie zastávky, ktoré sú veľmi dobre spojené so všetkými ostatnými zastávkami v sieti MHD. Tieto zastávky by mali byť umiestnené tak, aby poskytovali efektívny prístup k rôznym častiam mesta a mohli slúžiť ako dôležité uzly v sieti MHD. Tieto zastávky by mohli tieži slúžiť ako dôležité uzly, ktoré umožňujú cestujúcim rýchlo sa dostať z jedného miesta na druhé. Na nasledujúcom obrázku môžeme vidieť, že väčšia časť týchto zastávok sa nachádza v okolí Hlavnej stanice a Nového a Starého mesta. Patria tam zastávky ako napríklad Pod stanicou alebo Trnavské mýto. 
 
 <p align="center">
-<img src="closeness_central.png" width="600">
+<img src="images/closeness_central.png" width="600">
 </p>
 
 ## Slabiny v sieti MHD
 V rámci analýzy siete MHD sme identifikovali oblasti, kde by potenciálne mohlo dochádzať k problémom v prípade, že sa poškodí cesta, zastávka a podobne. Na niektorých úsekoch nie je vôbec možné dopravu presmerovať cez existujúce zastávky. Takéto zastávky sme identifikovali a je ich pomerne dosť. Znázorňujeme ich aj na nasledujúcom grafe. Zo zastávok, ktoré sú v našej sieti artikuláciami, vyberáme dve, ktoré z predchádzajúcej analýzy považujeme za veľmi dôležité:
 
 <p align="center">
-<img src="slabiny.png" width="600">
+<img src="images/slabiny.png" width="600">
 </p>
 
 * **Stn. Vinohrady**: v prípade rekonštrukcie cesty v okolí tejto zastávky by sa museli zaviesť náhradné zastávky niekde pri Stn. Vinohrady, aby sa dalo dostať na smer Horáreň Krásňany
@@ -91,7 +91,7 @@ Netreba však zanedbať ani ostatné zastávky, ktoré sú uzlami. Často je to 
 
 Rozhodli sme sa experimentovať aj s odstraňovaním náhodných vrcholov a sledovať jej prepojenosť. Pri odstránení 20% náhodných vrcholov prepojenosť siete začína zásadne klesať. V realite by to mohlo znamenať, že ak by sa z nejakého vážneho dôvodu obmedzila premávka v Bratislave, vážne by to ovplyvnilo aj MHD. Postupné odstraňovanie vrcholov v sieti ilustruje nasledujúci obrázok. 
 <p align="center">
-<img src="graf_perkolacie.png" width="600">
+<img src="images/graf_perkolacie.png" width="600">
 </p>
 
 
@@ -104,13 +104,13 @@ Vytvorili sme teda maticu, kde sme si uložili minimálne počty prestupov pre k
 
 Napríklad pre ```least_transfer["Danubiana"]["Hrad Devín"]``` sme získali takúto cestu s najmenším počtom prestupov: ```['Danubiana', '90', 'Landererova', '50', 'Most SNP', '29', 'Hrad Devín']```. Po porovnaní s fungujúcou aplikáciou iMHD sme si overili, či je pravda, že sa skutočne potrebujeme prepraviť dokopy 3 linkami. Tu je jedna z možností, ktorú nám ponúkla táto webstránka. Ponúkla nám síce inú kombináciu liniek, ale aj tak na to potrebujeme 3 rôzne linky a teda 2 prestupy. 
 <p align="center">
-<img src="danubiana_devin.png" width="600">
+<img src="images/danubiana_devin.png" width="600">
 </p>
 
 Priemerný počet prestupov pre všetky kombinácie liniek vrámci MHD je 1.44. 
 Na tomto histograme môžeme vidieť, že ak chceme cestovať vrámci Bratislavy na nejakú zo zastávok v našej sieti, potrebujeme na to maximálne 4 prestupy. 
 <p align="center">
-<img src="transfers.png" width="600">
+<img src="images/transfers.png" width="600">
 </p>
 
 ## Záver
