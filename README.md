@@ -52,14 +52,14 @@ Na tomto obrázku vidíme rozdelenie stupňa vrcholov. Môžeme si všimnúť, �
 
 ## Najdôležitejšie zastávky v MHD
 Ako sme už povedali vyššie, MHD predstavuje kľúčový prvok verejnej dopravy v mnohých moderných mestách a Bratislava nie je výnimkou. 
-Na obrázku môžeme vidieť graf reprezentujúci linky MHD v Bratislave. Veľkosť vrchola reprezentuje centralitu stupňa vrchola a farba reprezentuje centralitu blízkosti. Farebná škála ide od modrej, ktorá reprezentuje najmenšiu centralitu až po červenú, ktorá reprezentuje najväčšiu centralitu.
+Na obrázku môžeme vidieť graf reprezentujúci linky MHD v Bratislave. Veľkosť vrchola reprezentuje centralitu stupňa vrchola a farba reprezentuje centralitu blízkosti. Farebná škála ide od modrej, ktorá reprezentuje najmenšiu centralitu až po červenú, ktorá reprezentuje najväčšiu centralitu. Na jednotlivé zastávky, ktoré majú vysokú centralitu stupňa vrchola alebo centralitu blízkosti sa pozrieme detailnejšie.
 
 <p align="center">
 <img src="closenes.png" width="600">
 </p>
 
 ### Centralita stupňa vrchola (Degree Centrality)
-Body s vysokou centralitou stupňa vrchola, v našom prípade zastávky, sú miesta, z ktorých sa vieme dostať na rôzne smery. Zrejme to môžu byť miesta v blízkosti nákupných centier, kancelárskych budov, alebo pri veľkých križovatkách, ktoré slúžia ako prestupný bod na viaceré miesta. Keď sa pozrieme na mapu, táto myšlienka sa potvrdzuje napríklad pri Trnavskom mýte. Konkrétne Trnavské mýto je všeobecne známe tým, že z neho premávajú autobusy, trolejbusy a električky. Taktiež si môžeme všimnúť aj rozpoloženie týchto zastávok. Predpokladali sme, že niektoré zastávky budú sústredné na jednom mieste, konkrétne, v okoli centra Bratislavy. Naopak, väčšina týchto zastávok je rozprestretá po celej Bratislave. Môžeme teda povedať, že zastávky, ktoré majú vysokú centralitu stupňa vrchola slúžia ako dôležité prestupné body, na ktorých vieme prestúpiť na množstvo iných liniek, z ktorých sa vieme dostať na iné dôležité miesta ako je letisko, železničná stanica a podobne. 
+Body s vysokou centralitou stupňa vrchola, v našom prípade zastávky, sú miesta, z ktorých sa vieme dostať na rôzne smery. Zrejme to môžu byť miesta v blízkosti nákupných centier, kancelárskych budov, alebo pri veľkých križovatkách, ktoré slúžia ako prestupný bod na viaceré miesta. Keď sa pozrieme na mapu, táto myšlienka sa potvrdzuje napríklad pri Trnavskom mýte. Konkrétne *Trnavské mýto* je všeobecne známe tým, že z neho premávajú autobusy, trolejbusy a električky. Taktiež si môžeme všimnúť aj rozpoloženie týchto zastávok. Predpokladali sme, že niektoré zastávky budú sústredné na jednom mieste, konkrétne, v okoli centra Bratislavy. Naopak, väčšina týchto zastávok je rozprestretá po celej Bratislave. Môžeme teda povedať, že zastávky, ktoré majú vysokú centralitu stupňa vrchola slúžia ako dôležité prestupné body, na ktorých vieme prestúpiť na množstvo iných liniek, z ktorých sa vieme dostať na iné dôležité miesta ako je letisko, železničná stanica a podobne. 
 
 <p align="center">
 <img src="degree_central.png" width="600">
@@ -87,7 +87,7 @@ Netreba však zanedbať ani ostatné zastávky, ktoré sú uzlami. Často je to 
 
 ## Perkolácia v sieti
 
-Rozhodli sme sa experimentovať aj s odstraňovaním náhodných vrcholov a sledovať jej prepojenosť. Pri odstránení 20% náhodných vrcholov prepojenosť siete začína zásadne klesať. V realite by to mohlo znamenať, že ak by sa z nejakého vážneho dôvodu obmedzila premávka v Bratislave, vážne by to ovplyvnilo aj MHD. 
+Rozhodli sme sa experimentovať aj s odstraňovaním náhodných vrcholov a sledovať jej prepojenosť. Pri odstránení 20% náhodných vrcholov prepojenosť siete začína zásadne klesať. V realite by to mohlo znamenať, že ak by sa z nejakého vážneho dôvodu obmedzila premávka v Bratislave, vážne by to ovplyvnilo aj MHD. Postupné odstraňovanie vrcholov v sieti ilustruje nasledujúci obrázok. 
 <p align="center">
 <img src="graf_perkolacie.png" width="600">
 </p>
@@ -97,7 +97,7 @@ Rozhodli sme sa experimentovať aj s odstraňovaním náhodných vrcholov a sled
 
 Dôležitým a praktickým faktorom cestovania pre nás, autorov, je dostať sa z jedného miesta na druhé čo najjednoduchšie - s minimálnym množstvom prestupov. A myslíme si, že to zaujíma aj iných cestujúcich. Preto sme sa rozhodli zistiť, aký je priemerný, najmenší a najväčší počet prestupov, keď sa chceme dostať vrámci Bratislavy z bodu A do bodu B. 
 
-Na vypočítanie minimálneho počtu prestupov sme zostrojili bipartitný graf. Na jednej strane sú ako vrcholy grafu čísla liniek a na druhej strane sú vrcholmi jednotlivé zastávky. Ak linka číslo 1 prechádzala cez zastávku A, tak 1 a A sú spojené hranou. Následne sme problém transformovali na hľadanie najkratšej cesty v grafe. Spravili sme program, ktorý nám vypísal postupnosť vrcholov, cez ktoré prechádzame a z tých sme počítali koľko krát sme prešli cez vrchol s číslom linky. Od tohto čísla odpočítame jedna a to určuje počet prestupov. 
+Na vypočítanie minimálneho počtu prestupov sme zostrojili bipartitný graf. Na jednej strane sú ako vrcholy grafu čísla liniek a na druhej strane sú vrcholmi jednotlivé zastávky. Ak linka číslo 1 prechádzala cez zastávku A, tak 1 a A sú spojené hranou. Po vytvorení vhodnej reprezentácie našich dát sme problém transformovali na hľadanie najkratšej cesty v grafe. Spravili sme program, ktorý vypísal postupnosť vrcholov, cez ktoré prechádzame a z tých sme počítali koľko krát sme prešli cez vrchol s číslom linky. Od tohto čísla odpočítame jedna a to určuje počet prestupov. 
 Vytvorili sme teda maticu, kde sme si uložili minimálne počty prestupov pre každú dvojicu zastávok. Táto matica má na diagonále 0, nakoľko zo zastávky A do zastávky A nepotrebujeme žiaden prestup. 
 
 Na tomto histograme môžeme vidieť, že ak chceme cestovať vrámci Bratislavy na nejakú zo zastávok v našej sieti, potrebujeme na to maximálne 4 prestupy. 
