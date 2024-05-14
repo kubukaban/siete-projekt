@@ -100,7 +100,28 @@ Dôležitým a praktickým faktorom cestovania pre nás, autorov, je dostať sa 
 Na vypočítanie minimálneho počtu prestupov sme zostrojili bipartitný graf. Na jednej strane sú ako vrcholy grafu čísla liniek a na druhej strane sú vrcholmi jednotlivé zastávky. Ak linka číslo 1 prechádzala cez zastávku A, tak 1 a A sú spojené hranou. Po vytvorení vhodnej reprezentácie našich dát sme problém transformovali na hľadanie najkratšej cesty v grafe. Spravili sme program, ktorý vypísal postupnosť vrcholov, cez ktoré prechádzame a z tých sme počítali koľko krát sme prešli cez vrchol s číslom linky. Od tohto čísla odpočítame jedna a to určuje počet prestupov. 
 Vytvorili sme teda maticu, kde sme si uložili minimálne počty prestupov pre každú dvojicu zastávok. Táto matica má na diagonále 0, nakoľko zo zastávky A do zastávky A nepotrebujeme žiaden prestup. 
 
+Napríklad pre ```least_transfer["Danubiana"]["Hrad Devín"]``` sme získali takúto cestu s najmenším počtom prestupov: ```['Danubiana', '90', 'Landererova', '50', 'Most SNP', '29', 'Hrad Devín']```. Po porovnaní s fungujúcou aplikáciou iMHD sme si overili, či je pravda, že sa skutočne potrebujeme prepraviť dokopy 3 linkami. Tu je jedna z možností, ktorú nám ponúkla táto webstránka. Ponúkla nám síce inú kombináciu liniek, ale aj tak na to potrebujeme 3 rôzne linky a teda 2 prestupy. 
+<p align="center">
+<img src="danubiana_devin.png" width="600">
+</p>
+
+Priemerný počet prestupov pre všetky kombinácie liniek vrámci MHD je 1.44. 
 Na tomto histograme môžeme vidieť, že ak chceme cestovať vrámci Bratislavy na nejakú zo zastávok v našej sieti, potrebujeme na to maximálne 4 prestupy. 
 <p align="center">
 <img src="transfers.png" width="600">
 </p>
+
+## Záver
+
+Tento projekt nám poskytol detailný pohľad na štruktúru a vlastnosti siete mestskej hromadnej dopravy v Bratislave. Pomocou nástrojov na analýzu sietí sme dokázali odpovedať na niekoľko kľúčových otázok týkajúcich sa fungovania a efektivity tejto siete.
+
+Z našej analýzy vyplýva, že niektoré zastávky, ako napríklad *Trnavské mýto* a *Stn. Vinohrady*, sú kľúčovými bodmi v sieti, ktoré zabezpečujú plynulú premávku a prepojenie rôznych častí mesta. Tieto zastávky majú vysokú centralitu stupňa vrchola a blízkosti, čo znamená, že sú dôležitými uzlami nielen pre cestujúcich, ale aj pre celkovú stabilitu siete.
+
+Na druhej strane, identifikovali sme aj slabiny siete, ktoré by mohli spôsobiť problémy v prípade výpadku niektorých spojov alebo rekonštrukcií ciest. Tieto slabiny naznačujú potrebu posilnenia niektorých častí siete a lepšieho plánovania alternatívnych trás.
+
+Experiment s perkoláciou ukázal, že odstránenie 20% percent vrcholov môže zásadne ovplyvniť prepojenosť celej siete. Toto zistenie je dôležité pre plánovanie a zabezpečenie odolnosti MHD proti výpadkom.
+
+Analýza minimálneho počtu prestupov pre cestovanie medzi zastávkami odhalila, že priemerný počet prestupov je relatívne nízky, čo je pozitívne pre cestujúcich. Maximálny počet prestupov, ktorý sme identifikovali, je štyri, čo je akceptovateľné vzhľadom na veľkosť a komplexnosť siete.
+
+Na záver, náš projekt nám priniesol hodnotné poznatky, ktoré by po detailnejšej analýze mohli byť využité pre zlepšenie a optimalizáciu MHD v Bratislave. 
+
