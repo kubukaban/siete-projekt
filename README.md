@@ -14,7 +14,7 @@ Tu uvádzame niekoľko otázok, na ktoré sa budeme snažiť odpovedať v našom
 
 ## Použité dáta
 
-Dáta o prepojenosti zastávok, aktuálne ku 14.4.2024, sme získali [scrapovaním](crawl.py) z webstránky [MHD Bratislava](https://imhd.sk/ba/). Stránka obsahuje informácie o spojoch v Bratislavskej MHD spolu so zastávkami v oboch smeroch pre danú linku. Pre jednoduchosť sme použili len tie, ktoré mali číslo menšie ako 200. Linky s číslom nad 200 už zahŕňajú regionálne linky, ktoré obsluhujú obce mimo Bratislavy. Taksito sme nepoužili nočné linky a vlakové spojenia.
+Dáta o prepojenosti zastávok, aktuálne ku 14.4.2024, sme získali [scrapovaním](code/crawl.py) z webstránky [MHD Bratislava](https://imhd.sk/ba/). Stránka obsahuje informácie o spojoch v Bratislavskej MHD spolu so zastávkami v oboch smeroch pre danú linku. Pre jednoduchosť sme použili len tie, ktoré mali číslo menšie ako 200. Linky s číslom nad 200 už zahŕňajú regionálne linky, ktoré obsluhujú obce mimo Bratislavy. Taksito sme nepoužili nočné linky a vlakové spojenia.
 
 Scrapovali sme pomocou pythonovského programu a dáta sme uložili do súboru [linky.txt](linky.txt). Každý riadok súbor sa začína číslom linky, za ktorým nasleduje postupnosť zastávok, cez ktoré daná linka ide. Keďže niektoré linky majú rozdielne zastávky v opačnom smere, je potrebné uložiť si postupnosť zastávok v oboch smeroch.
 
